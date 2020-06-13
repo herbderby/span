@@ -36,6 +36,6 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(tests SpanTest.cpp SpanTest.cpp)
+add_executable(tests src/SpanTest.cpp src/SpanTest.cpp)
 target_link_libraries(tests gtest_main)
 add_test(NAME run_tests COMMAND tests)
